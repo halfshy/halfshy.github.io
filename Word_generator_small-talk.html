@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Small Talk Generator</title>
+<link href="Word_Generator_Smalltalk.css" rel="stylesheet" type="text/css">
+</script>
+</head>
+<body>
+        <!--Start of the Word generator Table, Headings-->
+    <div class="word_generator">
+        <div class="word_container">
+            <div class="topfour_container">
+                <div class="adj_sect">
+                        <div class="gen_box hd adj" onClick="newAdj()">ADJECTIVES</div>
+                        <div class="gen_box adj"><div class="word adjDisp"></div></div>
+                        <div class="gen_box adj"><div class="word adjDisp"></div></div>
+                        <div class="gen_box adj"><div class="word adjDisp"></div></div>
+                </div>
+                <div class="nounc_sect">
+                    <div class="gen_box hd nc" onClick="newNounC()">NOUNS | C</div>
+                        <div class="gen_box nc"><div class="word nounDispC"></div></div>
+                        <div class="gen_box nc"><div class="word nounDispC"></div></div>
+                        <div class="gen_box nc"><div class="word nounDispC"></div></div>
+                </div>
+                <div class="nouna_sect">
+                        <div class="gen_box hd na" onClick="newNounA()">NOUNS | A</div>
+                        <div class="gen_box na"><div class="word nounDispA"></div></div>
+                        <div class="gen_box na"><div class="word nounDispA"></div></div>
+                        <div class="gen_box na"><div class="word nounDispA"></div></div>
+                </div>
+                <div class="verb_sect">
+                    <div class="gen_box hd vb" onClick="newVerb()">VERBS</div>
+                        <div class="gen_box vb"><div class="word verbDisp"></div></div>
+                        <div class="gen_box vb"><div class="word verbDisp"></div></div>
+                        <div class="gen_box vb"><div class="word verbDisp"></div></div>
+                </div>
+                <div class="adv_sect">
+                        <div class="gen_box hd adv" onClick="newAdv()">ADVERBS</div>
+                        <div class="gen_box adv"><div class="word advDisp"></div></div>
+                        <div class="gen_box adv"><div class="word advDisp"></div></div>
+                        <div class="gen_box adv"><div class="word advDisp"></div></div>
+                </div>
+                    <div class="gen_box hd btn button_new" onClick="allNew()">ALL NEW WORDS</div>
+                    <div class="gen_box hd btn button_reset" onClick="clearText()">CLEAR</div>
+            </div>
+            <div class="adv_desk_view">
+                
+                    <div class="gen_box hd adv" onClick="newAdv()">ADVERBS</div>
+                    <div class="gen_box adv"><div class="word advDisp"></div></div>
+                    <div class="gen_box adv"><div class="word advDisp"></div></div>
+                    <div class="gen_box adv"><div class="word advDisp"></div></div>
+            </div>
+        
+        </div>
+            <div class="desk_btm_container">
+                <div class="desk_btm_btn" onClick="allNew()">ALL NEW WORDS</div>
+                <div class="desk_btm_btn" onClick="clearText()">CLEAR</div>
+            </div>
+    </div>
+
+    <br/>
+    <br/>
+    
+    <div class="smalltalk_container">
+        <div class="generator_container">
+            <div class="all_ques_btn" onclick="allArray()">ALL QUESTIONS</div>
+            <div class="ques_box">
+                <div class="ques_results questionDisp" id="result"> </div>
+            </div>
+        </div>
+            <hr class="st_linebreak">
+        <div class="ques_filter_container">
+                <div class="filter_btn" onclick="heavyArray()">HEAVY THOUGHTS</div>
+                <div class="spr_btn" onclick="sprArray()">SEX/POLITICS/RELIGION</div>
+                <div class="filter_btn" onclick="ltArray()">LIGHTER THOUGHTS</div>
+                <div class="clear_btn" onclick="resetArray('result')">CLEAR</div>
+        </div>
+        <div class="desktop_clear_btn" onclick="resetArray('result')">CLEAR</div>
+    </div>
+    <script src="small-talk-gen.js"></script>
+	<script src = "word_gen.js"></script>
+
+	
+	
+</body>
+</html>
